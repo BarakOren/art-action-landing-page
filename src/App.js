@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import LandingPage from "./landingpage";
+import ThankYouPage from "./thankyou";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ArtActionLogo from "./logo";
+import { createGlobalStyle } from "styled-components";
+import rtlPlugin from 'stylis-plugin-rtl';
 
-function App() {
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: Open-Sans, Helvetica, Sans-Serif;
+
+
+  }
+`;
+ 
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <GlobalStyle stylisPlugins={[rtlPlugin]} />
+    <ArtActionLogo />
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/thank-you" element={<ThankYouPage />} />
+      </Routes>
+    </Router>
+    </>
   );
-}
+};
 
 export default App;
