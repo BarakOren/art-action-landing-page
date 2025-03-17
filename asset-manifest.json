@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.5d6afeff.js",
-    "static/js/453.5cb948f1.chunk.js": "/static/js/453.5cb948f1.chunk.js",
-    "static/media/video.mp4": "/static/media/video.4e8d43ee80410711d5ae.mp4",
-    "static/media/pizza194.jpg": "/static/media/pizza194.2523d2b9d782d69672af.jpg",
-    "static/media/logo.png": "/static/media/logo.f3d10808cbb7050b3795.png",
-    "static/media/fruitsco.png": "/static/media/fruitsco.e307d2d15bcd847f261c.png",
-    "static/media/candymall.webp": "/static/media/candymall.cac84e7b98eec06ced5b.webp",
-    "static/media/carmellita.jpg": "/static/media/carmellita.4e958b1c3e28942e0877.jpg",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.5d6afeff.js.map": "/static/js/main.5d6afeff.js.map",
-    "453.5cb948f1.chunk.js.map": "/static/js/453.5cb948f1.chunk.js.map"
+    "main.css": "/art-action-landing-page/static/css/main.e6c13ad2.css",
+    "main.js": "/art-action-landing-page/static/js/main.a37ebf65.js",
+    "static/js/453.5cb948f1.chunk.js": "/art-action-landing-page/static/js/453.5cb948f1.chunk.js",
+    "static/media/video.mp4": "/art-action-landing-page/static/media/video.4e8d43ee80410711d5ae.mp4",
+    "static/media/pizza194.jpg": "/art-action-landing-page/static/media/pizza194.2523d2b9d782d69672af.jpg",
+    "static/media/logo.png": "/art-action-landing-page/static/media/logo.f3d10808cbb7050b3795.png",
+    "static/media/fruitsco.png": "/art-action-landing-page/static/media/fruitsco.e307d2d15bcd847f261c.png",
+    "static/media/candymall.webp": "/art-action-landing-page/static/media/candymall.cac84e7b98eec06ced5b.webp",
+    "static/media/carmellita.jpg": "/art-action-landing-page/static/media/carmellita.4e958b1c3e28942e0877.jpg",
+    "index.html": "/art-action-landing-page/index.html",
+    "main.e6c13ad2.css.map": "/art-action-landing-page/static/css/main.e6c13ad2.css.map",
+    "main.a37ebf65.js.map": "/art-action-landing-page/static/js/main.a37ebf65.js.map",
+    "453.5cb948f1.chunk.js.map": "/art-action-landing-page/static/js/453.5cb948f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.5d6afeff.js"
+    "static/js/main.a37ebf65.js"
   ]
 }
