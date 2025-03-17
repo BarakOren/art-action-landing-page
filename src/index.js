@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/art-action-landing-page'>
      <App />
    </BrowserRouter>
 
