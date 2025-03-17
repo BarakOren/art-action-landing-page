@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useState } from "react";
 import styled from "styled-components";
 import CandyMall from "./Assets/candymall.webp"
 import Benefit from "./Assets/benefit.png"
@@ -7,6 +7,10 @@ import Mercaz from "./Assets/mercaz.jpg"
 import FruitsCo from "./Assets/fruitsco.png"
 import Carmellita from "./Assets/carmellita.jpg"
 import Mp4 from "./Assets/video.mp4";
+import emailjs from '@emailjs/browser';
+import { useNavigate } from "react-router-dom";
+
+
 
 const Container = styled.div`
   background: black;
@@ -62,7 +66,7 @@ const Button = styled.button`
 `;
 
 const CompaniesSection = styled.div`
-  margin-top: 40px;
+  margin-top: 0px;
   text-align: center;
 `;
 
@@ -85,7 +89,47 @@ const CompanyLogo = styled.img`
   margin: 10px;
 `;
 
+const Message = styled.p`
+  font-size: 22px;
+  text-align: center;
+`
+
+
+
 const LandingPage = () => {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({ name: "", phone: "" });
+  const [message, setMessage] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+
+    emailjs
+      .send(
+        "service_a29ulwq", // Replace with your EmailJS service ID
+        "template_5qhpcu7", // Replace with your EmailJS template ID
+        formData,
+        "VlxW14D4B0bI15kYu" // Replace with your EmailJS public key
+      )
+      .then(
+        () => {
+          // setMessage("ההודעה נשלחה!");
+          // setFormData({ name: "", phone: "" });
+          navigate("/thank-you");
+        },
+        (error) => {
+          setMessage("מצטערים, יש בעיה.. תוכלו ליצור איתנו קשר דרך האינסטגרם.");
+          console.error("EmailJS Error:", error);
+        }
+      );
+    }
+
+
   return (
     <Container>
       <Headline>אז מה באמת קורה כשיש לך גרפיטי ואומנות בעסק שלך?</Headline>
@@ -100,11 +144,31 @@ const LandingPage = () => {
           Your browser does not support the video tag.
         </Video>
       </VideoContainer>
-      <Form action="/thank-you">
-        <Input type="text" placeholder="שם מלא" required />
-        <Input type="number" placeholder="מספר פלאפון" required />
+
+
+
+      <Form onSubmit={handleSubmit}>
+        <Input  
+        type="text"
+        name="name"
+        placeholder="שם מלא"
+        value={formData.name}
+        onChange={handleChange}
+        required
+        />
+        <Input type="number"
+        name="phone"
+        placeholder="מספר פלאפון"        
+        value={formData.phone}
+        onChange={handleChange}
+        required
+        />
         <Button type="submit">שליחה</Button>
+        {message && <Message>{message}</Message>}
       </Form>
+
+
+
       <CompaniesSection>
         <CompaniesTitle>לקוחותינו</CompaniesTitle>
         <CompaniesLogos>
