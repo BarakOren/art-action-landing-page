@@ -19,7 +19,7 @@ const Container = styled.div`
 `;
 
 const Headline = styled.h1`
-  font-size: 24px;
+  font-size: 27px;
   text-align: center;
 `;
 
@@ -88,8 +88,12 @@ const CompanyLogo = styled.img`
 const LandingPage = () => {
   return (
     <Container>
-      <Headline>שוב שלום כאן נדב מצוות ארט אקשן!</Headline>
-      <SubHeadline>שוב שלום כאן נדב מצוות ארט אקשן! הינה אני מופיע בסרטון שלמטה ומסביר לכם איך להפוך את העסק למפלצת.</SubHeadline>
+      <Headline>אז מה באמת קורה כשיש לך גרפיטי ואומנות בעסק שלך?</Headline>
+<SubHeadline>דמיינו את עצמכם יוצאים לקנות נעליים והגעתם לשני חנויות מתחרות.
+<br/>
+<br/>
+באחת עיצוב רגיל עם תמונה מודפסת של נייק, בשניה? קיר ענק עם גרפיטי חי ובועט, העין שלכם לא תאמין למה שהיא רואה. כל תשומת הלב שלכם נתפסת ולא תרצו לעזוב, ולמה זה? כי קיבלתם חוויה ברמה אחרת.
+</SubHeadline>
       <VideoContainer>
         <Video controls>
           <source src={Mp4} type="video/mp4" />
