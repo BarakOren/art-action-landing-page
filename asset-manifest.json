@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/art-action-landing-page/static/css/main.e6c13ad2.css",
-    "main.js": "/art-action-landing-page/static/js/main.74b0af2e.js",
+    "main.js": "/art-action-landing-page/static/js/main.5e77405f.js",
     "static/js/453.5cb948f1.chunk.js": "/art-action-landing-page/static/js/453.5cb948f1.chunk.js",
     "static/media/video.mp4": "/art-action-landing-page/static/media/video.4e8d43ee80410711d5ae.mp4",
     "static/media/pizza194.jpg": "/art-action-landing-page/static/media/pizza194.2523d2b9d782d69672af.jpg",
@@ -11,11 +11,11 @@
     "static/media/carmellita.jpg": "/art-action-landing-page/static/media/carmellita.4e958b1c3e28942e0877.jpg",
     "index.html": "/art-action-landing-page/index.html",
     "main.e6c13ad2.css.map": "/art-action-landing-page/static/css/main.e6c13ad2.css.map",
-    "main.74b0af2e.js.map": "/art-action-landing-page/static/js/main.74b0af2e.js.map",
+    "main.5e77405f.js.map": "/art-action-landing-page/static/js/main.5e77405f.js.map",
     "453.5cb948f1.chunk.js.map": "/art-action-landing-page/static/js/453.5cb948f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.74b0af2e.js"
+    "static/js/main.5e77405f.js"
   ]
 }
