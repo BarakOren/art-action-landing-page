@@ -121,6 +121,10 @@ const LandingPage = () => {
           // setMessage("ההודעה נשלחה!");
           // setFormData({ name: "", phone: "" });
           navigate("/thank-you");
+          window.scrollTo({
+            top: 0,
+            left: 0,
+          });
         },
         (error) => {
           setMessage("מצטערים, יש בעיה.. תוכלו ליצור איתנו קשר דרך האינסטגרם.");
