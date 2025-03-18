@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Mp4 from "./Assets/video.mp4";
+import CoverPhoto from "./Assets/coverphoto.jpg"
 
 const Container = styled.div`
   background: black;
@@ -36,7 +37,7 @@ const ThankYouPage = () => {
     <Container>
       <Headline>תודה! צוות ארט אקשן חוזר אליך בהקדם.</Headline>
       <VideoContainer>
-        <Video controls>
+        <Video poster={CoverPhoto} controls>
            <source src={Mp4} type="video/mp4" />
           Your browser does not support the video tag.
         </Video>

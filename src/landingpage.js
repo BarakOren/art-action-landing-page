@@ -7,6 +7,7 @@ import Mercaz from "./Assets/mercaz.jpg"
 import FruitsCo from "./Assets/fruitsco.png"
 import Carmellita from "./Assets/carmellita.jpg"
 import Mp4 from "./Assets/video.mp4";
+import CoverPhoto from "./Assets/coverphoto.jpg"
 import emailjs from '@emailjs/browser';
 import { useNavigate } from "react-router-dom";
 
@@ -143,7 +144,7 @@ const LandingPage = () => {
 באחת עיצוב רגיל עם תמונה מודפסת של נייק, בשניה? קיר ענק עם גרפיטי חי ובועט, העין שלכם לא תאמין למה שהיא רואה. כל תשומת הלב שלכם נתפסת ולא תרצו לעזוב, ולמה זה? כי קיבלתם חוויה ברמה אחרת.
 </SubHeadline>
       <VideoContainer>
-        <Video controls>
+        <Video poster={CoverPhoto} controls>
           <source src={Mp4} type="video/mp4" />
           Your browser does not support the video tag.
         </Video>
